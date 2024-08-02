@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HRMS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FAF3E0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: transparent;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 90%;
+            z-index: 1000;
+        }
+
+        header .logo {
+            height: 40px;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin-left: 20px;
+        }
+
+        header nav ul li a {
+            color: #000;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .main-content {
+            padding: 100px 20px 20px 20px; /* Adjust padding to prevent content from hiding under the fixed header */
+            width: 85%;
+            margin: 0 auto;
+            color: #333;
+        }
+
+        .section-1 {
+            background-image: url('bg1.png');
+            background-size: cover;
+            background-position: center;
+            padding: 50px;
+            text-align: left;
+        }
+
+        .section-1 h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .section-1 p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .section-1 .welcome-btn {
+            background-color: #EB3D5E;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .section-1 .welcome-btn:hover {
+            transform: translateY(-3px);
+        }
+
+        .section-1 .send-cv-btn {
+            background-color: #F8A455;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .section-1 .send-cv-btn:hover {
+            transform: translateY(-3px);
+        }
+
+        .section-2 {
+            background-image: url('bg2.png');
+            background-size: cover;
+            background-position: center;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .section-2 h2 {
+            font-size: 60px; /* Increase the font size */
+            font-family: 'Alfa Slab One', sans-serif; /* Change the font */
+            color: white;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .section-2 p {
+            font-size: 18px; /* Increase the font size */
+            font-family: 'Kantumruy'; /* Change the font */
+            color: white;
+            max-width: 1000px;
+            margin: auto;
+            text-align: left;
+        }
+
+        .section-2 .about-us-btn {
+            background-color: white;
+            color: #FF6F61;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .section-2 .about-us-btn:hover {
+            transform: translateY(-3px);
+        }
+
+        .section-3 {
+            background-image: url('bg3.png');
+            background-size: cover;
+            background-position: center;
+            padding: 50px;
+            text-align: right;
+        }
+
+        .section-3 p {
+            font-size: 18px; /* Increase the font size */
+            font-family: 'Kantumruy'; /* Change the font */
+            color: black;
+            max-width: 1000px;
+            margin: auto;
+            text-align: right;
+        }
+
+        .section-3 .statistic-btn {
+            background-color: #EB3D5E;
+            color: #FFFFFF;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .section-3 .statistic-btn:hover {
+            transform: translateY(-3px);
+        }
+
+        button {
+            padding: 15px;
+            width: 30%;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #E8E8E8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Logo1.1.png" alt="HRMS Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about_us.php">ABOUT</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contacts">CONTACTS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section-1" id="home">
+        <br>
+        <br>
+        <h1>HUMAN RESOURCE<br>MANAGEMENT SYSTEM</h1>
+        <br>
+        <p>Efficiently Manage and Sort Resumes. <br>Simplifying HR Processes for<br> Company-Wide Success.</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button class="welcome-btn" onclick="location.href='login.php'">WELCOME</button>   
+        <br>
+        <br>
+        <button class="send-cv-btn" onclick="location.href='send_cv.php'">SEND CV</button>
+    </section>
+
+    <section class="section-2">
+        <h2>ENHANCE YOUR HR <br> PROCESS WITH EASE.</h2>
+        <br>
+        <br>
+        <p>Step into a world where HR management is a breeze. Experience an interface designed to make your tasks effortless<br>
+            and efficient. With all the essential tools at your disposal, our platform transforms the way you handle HR operations.<br>
+            Dive deeper into the features that make our system unique by following the link below. Welcome to the future of streamlined <br>
+            HR management.</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button class="about-us-btn" onclick="location.href='about_us.php'">LEARN MORE</button>
+    </section>
+
+    <section class="section-3">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1> <p>Experience clarity and convenience with our <br><big><strong><b>platform's statistics.</strong></b></big></p></h1>
+        <p>Maximize efficiency with our platform's 
+            <br>comprehensive statistics. Easily track monthly,
+            <br> quarterly, and yearly data to make informed 
+            <br>decisions. Simplify your HR processes with intuitive 
+            <br> and accessible insights at your fingertips.</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button class="statistic-btn" onclick="location.href='statistic_info.php'">LEARN MORE</button>
+        <br>
+        <br>
+        <br>
+    </section>
+</body>
+</html>
